@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+    <string name="msg_add_element">Agregar un elemento nuevo</string>
+    <string name="msg_email">Email</string>
+    <string name="msg_password">Password</string>
+    <string name="msg_login">Inicio de sesión</string>
+    <string name="msg_error_login">Imposible iniciar sesión %s</string>
+    <string name="action_logout">Cerrar sesión</string>
+</resources>
