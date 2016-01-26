@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCancelled(FirebaseError firebaseError) {}
         });
     }
+    
     private void setupUsername() {
         SharedPreferences prefs = getApplication().getSharedPreferences("ToDoPrefs", 0);
         String username = prefs.getString("username", null);
