@@ -21,7 +21,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/msg_add_element"
+            android:hint="@string/main.message.addelement"
             android:id="@+id/editTextItem" />
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.FloatingActionButton
