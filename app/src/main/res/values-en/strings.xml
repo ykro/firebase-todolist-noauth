@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">ToDoList</string>
-    <string name="msg_add_element">Add new element</string>
+    <string name="main.message.addelement">Add new element</string>
 </resources>
