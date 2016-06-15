@@ -2,23 +2,22 @@ package com.bitandik.labs.todolist;
 
 import android.app.Application;
 
-import com.firebase.client.Firebase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class ToDoApplication extends Application {
-    private String FIREBASE_CHILD = "items";
-    private String FIREBASE_URL = "https://to-do-list-ykro.firebaseio.com/";
+  private String ITEMS_CHILD_NAME = "items";
+  private DatabaseReference itemsReference;
 
-    Firebase firebase;
+  @Override
+  public void onCreate() {
+    super.onCreate();
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    database.setPersistenceEnabled(true);
+    itemsReference = database.getReference(ITEMS_CHILD_NAME);
+  }
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        Firebase.setAndroidContext(this);
-        Firebase.getDefaultConfig().setPersistenceEnabled(true);
-        firebase = new Firebase(FIREBASE_URL).child(FIREBASE_CHILD);
-    }
-
-    public Firebase getFirebase() {
-        return firebase;
-    }
+  public DatabaseReference getItemsReference() {
+    return itemsReference;
+  }
 }

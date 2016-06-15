@@ -4,39 +4,48 @@ package com.bitandik.labs.todolist.models;
  * Created by ykro on 9/14/15.
  */
 public class ToDoItem {
-    String username;
-    String item;
-    boolean completed;
+  private String key;
+  private String item;
+  private String username;
+  private boolean completed;
 
-    public ToDoItem(){ }
+  public ToDoItem(){ }
 
-    public ToDoItem(String item, String username) {
-        this.username = username;
-        this.item = item;
-        this.completed = false;
-    }
+  public ToDoItem(String item, String username) {
+      this.username = username;
+      this.item = item;
+      this.completed = false;
+  }
 
-    public String getUsername() {
-        return username;
-    }
+  public String getKey() {
+      return key;
+  }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+  public void setKey(String key) {
+      this.key = key;
+  }
 
-    public String getItem() {
-        return item;
-    }
+  public String getUsername() {
+      return username;
+  }
 
-    public void setItem(String item) {
-        this.item = item;
-    }
+  public void setUsername(String username) {
+      this.username = username;
+  }
 
-    public boolean isCompleted() {
-        return completed;
-    }
+  public String getItem() {
+      return item;
+  }
 
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
-    }
+  public void setItem(String item) {
+      this.item = item;
+  }
+
+  public boolean isCompleted() {
+      return completed;
+  }
+
+  public void setCompleted(boolean completed) {
+      this.completed = completed;
+  }
 }

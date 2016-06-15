@@ -1,9 +1,4 @@
 <resources>
     <string name="app_name">ToDoList</string>
     <string name="msg_add_element">Add new element</string>
-    <string name="msg_email">Email</string>
-    <string name="msg_password">Password</string>
-    <string name="msg_login">Login</string>
-    <string name="msg_error_login">Can\'t login %s</string>
-    <string name="action_logout">Logout</string>
 </resources>
