@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     recyclerView.setLayoutManager(new LinearLayoutManager(this));
     recyclerView.setAdapter(adapter);
   }
-    
+
   private void setupUsername() {
     SharedPreferences prefs = getApplication().getSharedPreferences("ToDoPrefs", 0);
     String username = prefs.getString("username", null);
